@@ -1,0 +1,115 @@
+
+<view class="main-container">
+
+  <header>
+    <ul>
+        <li class="head-l"><span>热门分类</span></li>
+        <li class="head-r">
+          <image src="/images/yq.png" mode="scaleToFill"></image>
+        </li>
+    </ul>
+  </header>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>女装</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>女鞋</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>美妆</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>百货</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>配饰</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>包包</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+  <view class="hot-main">
+    <view class="hot-h">
+      <b></b>
+      <span>男友</span>
+      <i></i>
+    </view>
+    <ul>
+      <li wx:for="{{hot}}" wx:for-item="item">
+        <image src="{{item.img}}"></image>
+        <b>{{item.title}}</b>
+      </li>
+    </ul>
+  </view>
+
+
+
+
+
+</view>

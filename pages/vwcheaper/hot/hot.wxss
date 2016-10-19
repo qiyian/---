@@ -1,0 +1,99 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+header{
+  height:40px;
+  width:100%;
+  background:#ffcc22;
+}
+
+header ul{
+  width:100%;
+  height:40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header ul .head-l{
+  width:90%;
+  height:20px;
+  text-align: center;
+}
+header ul .head-l span{
+  display: block;
+  width:50%;
+  height:20px;
+  margin-left:30%;
+}
+header ul .head-r{
+  width:10%;
+  height:20px;
+  text-align: left;
+}
+header ul .head-r image{
+  width:24px;
+  height:20px;
+}
+
+
+.hot-main{
+  width: 100%;
+  height:100%;
+}
+.hot-main .hot-h{
+  width:80%;
+  height:40px;
+  padding:2% 10%;
+  line-height: 40px;
+  text-align: center;
+}
+.hot-main .hot-h b{
+  float: left;
+  width:30%;
+  height: 1px;
+  background: #000;
+  margin-top: 20px;
+}
+.hot-main .hot-h span{
+  float: left;
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+}
+.hot-main .hot-h i{
+  float: left;
+  width:30%;
+  height: 1px;
+  background: #000;
+  margin-top: 20px;
+}
+
+
+.hot-main ul{
+  width: 100%;
+  height:100%;
+}
+.hot-main ul li{
+  width:18%;
+  height:90px;
+  float:left;
+  margin: 5px 11px;
+}
+.hot-main ul li image{
+  display: block;
+  width:100%;
+  height:70px;
+}
+.hot-main ul li b{
+  display: block;
+  height:20px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+}

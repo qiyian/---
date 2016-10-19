@@ -1,0 +1,58 @@
+
+<view class="main-container">
+
+    <header>
+      <ul>
+          <li class="head-l"><span>专场特卖</span></li>
+          <li class="head-r">
+            <image src="/images/yq.png" mode="scaleToFill"></image>
+          </li>
+      </ul>
+    </header>
+
+    <view class="list-loading">
+      <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+    </view>
+
+    <view class="sale-main">
+      <ul>
+          <li class="main-l">
+            <image src="/images/ko.png" mode="scaleToFill"></image>
+            <span>100%正品</span>
+          </li>
+          <li class="main-c">
+            <image src="/images/fz.png" mode="scaleToFill"></image>
+            <span>7天放心退</span>
+          </li>
+          <li class="main-r">
+            <image src="/images/ly.png" mode="scaleToFill"></image>
+            <span>限时抢购</span>
+          </li>
+      </ul>
+    </view>
+
+
+    <swiper class="sale-list" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+          <block>
+              <scroll-view wx:if="{{loadingHidden}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" upper-threshold="0" lower-threshold="0" scroll-top="{{refreshHidden ? 1 : 0}}">
+                <view hidden="{{refreshHidden}}">
+                  <button plain="true" loading="true">努力刷新中...</button>
+                </view>
+
+                <view class="sale-c" wx:for="{{list}}" wx:for-item="item">
+                  <image src="{{item.img}}" mode="scaleToFill"></image>
+                  <b>
+                    <span>{{item.title}}</span>
+                    <i>{{item.description}}</i>
+                  </b>
+                </view>
+
+                <view hidden="{{loadmoreHidden}}">
+                  <button plain="true" loading="true">努力加载中...</button>
+                </view>
+              </scroll-view>
+          </block>
+      </swiper>
+
+
+</view>

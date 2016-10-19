@@ -1,0 +1,107 @@
+<view class="main-container">
+
+  <header>
+    <ul>
+        <li class="head-l">
+          <image src="/images/yq.png"  mode="scaleToFill"></image>
+        </li>
+        <li class="head-c">
+            <span class="btn">
+              <image src="/images/lo.png"  mode="scaleToFill"></image>
+            </span>
+            <input type="text" id="txt" placeholder="全网最低，搜你想要"/>
+        </li>
+        <li class="head-r">
+          <image src="/images/ys.png" mode="scaleToFill"></image>
+        </li>
+    </ul>
+  </header>
+
+  <view class="list-loading">
+    <loading hidden="{{loadingHidden}}">努力加载中...</loading>
+  </view>
+
+  <swiper class="main-list" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+    </block>
+  </swiper>
+
+
+  <view class="activity">
+    <ul>
+      <li><image src="/images/act1.png" mode="scaleToFill"></image><span>1分钱抽奖</span></li>
+      <li><image src="/images/act2.png" mode="scaleToFill"></image><span>好评有礼</span></li>
+      <li><image src="/images/act3.png" mode="scaleToFill"></image><span>新人领红包</span></li>
+    </ul>
+  </view>
+
+  <view class="spe-price">
+		<p>
+			<span>特价专区</span>
+			<i>每天精选限量好货</i>
+		</p>
+		<ul>
+			<li class="li1"><image src="/images/shoes1.jpg" mode="scaleToFill"></image></li>
+			<li class="li2"><image src="/images/shoes2.jpg" mode="scaleToFill"></image></li>
+			<li class="li3"><image src="/images/shoes3.jpg" mode="scaleToFill"></image></li>
+			<li class="li4"><image src="/images/shoes4.jpg" mode="scaleToFill"></image></li>
+		</ul>
+  </view>
+
+  <view class="spe-sale">
+		<p>
+			<span>专场特卖</span>
+			<i>每天精选限量专卖</i>
+		</p>
+    <view class="sale-c" wx:for="{{sale}}" wx:for-item="item">
+  		<image src="{{item.img}}" mode="scaleToFill"></image>
+      <b>
+  			<span>{{item.title}}</span>
+  			<i>{{item.description}}</i>
+  		</b>
+    </view>
+  </view>
+
+  <scroll-view class="scroll-view-x" scroll-x="true" scroll-top="100">
+     <ul class="hengxiangul" >
+         <li wx:for="{{ulli}}" wx:for-item="item">{{item}}</li>
+    </ul>
+  </scroll-view>
+
+  <swiper class="main-center" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSlider">
+      <block>
+          <swiper-item>
+              <ul>
+                <li wx:for="{{list}}" wx:for-item="item">
+                  <image src="{{item.img}}" mode="aspectFill"></image>
+                  <b>{{item.title}}</b>
+                  <span>{{item.price}}</span>
+                </li>
+              </ul>
+          </swiper-item>
+          <swiper-item>
+            <ul>
+              <li wx:for="{{list}}" wx:for-item="item">
+                <image src="{{item.img}}" mode="aspectFill"></image>
+                <b>{{item.title}}</b>
+                <span>{{item.price}}</span>
+              </li>
+            </ul>
+          </swiper-item>
+          <swiper-item>
+            <ul>
+              <li wx:for="{{list}}" wx:for-item="item">
+                <image src="{{item.img}}" mode="aspectFill"></image>
+                <b>{{item.title}}</b>
+                <span>{{item.price}}</span>
+              </li>
+            </ul>
+          </swiper-item>
+      </block>
+    </swiper>
+
+
+</view>

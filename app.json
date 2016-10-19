@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/vwcheaper/main/main",
+    "pages/vwcheaper/sale/sale",
+    "pages/vwcheaper/hot/hot",
+    "pages/vwcheaper/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "番茄炒蛋",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ffcd21",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/vwcheaper/main/main",
+        "text": "首页",
+        "iconPath": "images/yt.png",
+        "selectedIconPath": "images/yt.png"
+      },
+      {
+        "pagePath": "pages/vwcheaper/sale/sale",
+        "text": "专场特卖",
+        "iconPath": "images/yv.png",
+        "selectedIconPath": "images/yv.png"
+      },
+      {
+        "pagePath": "pages/vwcheaper/hot/hot",
+        "iconPath": "images/yp.png",
+        "selectedIconPath": "images/yp.png",
+        "text": "热门分类"
+      },
+      {
+        "pagePath": "pages/vwcheaper/mine/mine",
+        "iconPath": "images/yu.png",
+        "selectedIconPath": "images/yu.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

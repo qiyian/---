@@ -1,0 +1,55 @@
+Page({
+  data: {
+    current: 0,
+    hot:[
+      {
+        "img":"/images/hot1.jpg",
+        "title":"秋日外套"
+      },
+      {
+        "img":"/images/hot2.jpg",
+        "title":"T恤上衣"
+      },
+      {
+        "img":"/images/hot3.jpg",
+        "title":"衬衫"
+      },
+      {
+        "img":"/images/hot4.jpg",
+        "title":"连衣裙"
+      },
+      {
+        "img":"/images/hot5.jpg",
+        "title":"秋日长裤"
+      },
+      {
+        "img":"/images/hot6.jpg",
+        "title":"背带裤"
+      },
+      {
+        "img":"/images/hot7.jpg",
+        "title":"裙子"
+      },
+      {
+        "img":"/images/hot8.jpg",
+        "title":"卫衣"
+      },
+      {
+        "img":"/images/hot9.jpg",
+        "title":"打底裤"
+      },
+      {
+        "img":"/images/hot10.jpg",
+        "title":"套装"
+      },
+      {
+        "img":"/images/hot11.jpg",
+        "title":"家居服"
+      },
+      {
+        "img":"/images/hot12.jpg",
+        "title":"内衣"
+      }
+    ],
+  }
+});
