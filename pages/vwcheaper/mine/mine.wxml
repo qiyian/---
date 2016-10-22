@@ -1,4 +1,3 @@
-
 <view class="main-container">
 
   <header>
@@ -13,6 +12,24 @@
         </li>
     </ul>
   </header>
+
+  <nav>
+    <ul>
+      <li>
+        <image src="/images/mine1.jpg"></image>
+        <span></span>
+      </li>
+      <li>
+        <image src="/images/mine1.jpg"></image>
+        <span></spa
+      </li>
+      <li>
+        <image src="/images/mine1.jpg"></image>
+        <span></span>
+      </li>
+    </ul>
+  </nav>
+
 
 
 
